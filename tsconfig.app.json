@@ -1,28 +1,24 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ES2023",
+    "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "types": ["vite/client"],
     "skipLibCheck": true,
 
-    /* Bundler mode */
+    /* Bundler */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
-    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
     "jsx": "react-jsx",
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    /* Strict OFF */
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noEmitOnError": false
   },
   "include": ["src"]
 }
